@@ -160,3 +160,5 @@ extra_css:
   # - stylesheets/ex1.css
 nav:
   - 首页: index.md
+  - 元神:
+    - 启动: a/a.md
