@@ -160,6 +160,5 @@ extra_css:
   # - stylesheets/ex1.css
 nav:
   - 首页: index.md
-  - 第一页: ab
-    - 第二页: ab/a.md
+  - 第一页: ab/a.md
     
