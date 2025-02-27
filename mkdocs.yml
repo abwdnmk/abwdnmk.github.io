@@ -160,6 +160,5 @@ extra_css:
   # - stylesheets/ex1.css
 nav:
   - 首页: index.md
-  - 原神:
-    - 原神日记: ab/a.md
+  - 写题心得: skill.md
     
