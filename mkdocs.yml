@@ -160,5 +160,5 @@ extra_css:
   # - stylesheets/ex1.css
 nav:
   - 首页: index.md
-  - 第一页: ab/a.md
+  - 原神日记: ab/a.md
     
