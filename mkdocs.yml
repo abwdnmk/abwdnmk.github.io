@@ -161,4 +161,6 @@ extra_css:
 nav:
   - 首页: index.md
   - 写题心得: skill.md
+  - 每日水题:
+    - 3月5日:water/2025 3.5.md
     
