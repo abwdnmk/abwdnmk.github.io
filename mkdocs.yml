@@ -167,3 +167,4 @@ nav:
     - 3月7日: water/2025 3.7.md
   - 算法模板:
     - dijkstra算法: mode/dijkstra.md
+    - 树的dfs: mode/tree_dfs.md
