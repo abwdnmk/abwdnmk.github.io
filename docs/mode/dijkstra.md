@@ -27,60 +27,49 @@ dijkstra算法主要是在有向图中求从一个点到其他点的最短路径
 using namespace std;
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 #define ll long long
-const int maxx=5e5+5;
-const ll INF=0x3f3f3f3f;
-int n,m,s,cnt=1;//cnt是add函数中用的； 
-//n代表顶点数，m代表边的数量，s代表起点； 
-int head[maxx],dis[maxx],vis[maxx];
-//有向图中的边的存储； 
-struct edge{
-	int u,v,w,next;
-}e[maxx];
-priority_queue< pair<int,int> > q;
-//有向图中边的添加,感觉不太适应这种方法啊，先用下面的吧； 
-/*void add_edge(int u,int v,int w){
-	e[cnt].u=u;
-	e[cnt].v=v;
-	e[cnt].w=w;
-	
-	e[cnt].next=head[u];
-	head[u]=cnt;
-	cnt++;
-}*/
+const int maxx=2e5+5;
+const int N=1e5+5;
+const ll INF=1e18;
+int n,m,s;
+vector< pair<int,int> > g[maxx];
+bool vis[N];
+ll dis[N];
+void add_edge(int u,int v,int w){
+	g[u].push_back({v,w});
+}
+priority_queue< pair<ll,int>, vector< pair<ll,int> >, greater< pair<ll,int> > > q;
 void dijkstra(){
-	for(int i=1;i<=n;i++){
-		dis[i]=INF;
-	}
-	dis[s]=0;
-	q.push({0,s});
+	q.push({0,1});
 	while(!q.empty()){
-		pair<int,int> p=q.top();
+		pair<ll,int> p=q.top();
 		q.pop();
 		int u=p.second;
-		if(vis[u]==1) continue;
-		vis[u]=1;
-		for(int i=head[u];i;i=e[i].next){
-			int v=e[i].v;
-			if(dis[v]>dis[u]+e[i].w){
-				dis[v]=dis[u]+e[i].w;
-				q.push({dis[v],v});
+		if(vis[u]) continue;
+		vis[u]=true;
+		for(int v=0;v<g[u].size();v++){
+			int to=g[u][v].first,w=g[u][v].second;
+			if(dis[to]>dis[u]+w){
+				dis[to]=dis[u]+w;
+				q.push({dis[to],to});
 			}
 		}
+	}
+	for(int i=1;i<=n;i++){
+		cout<<dis[i]<<" ";
 	}
 }
 int main(int argc, char** argv) {
 	cin>>n>>m>>s;
-	for(int i=1;i<=n;i++){
-		cin>>e[i].u>>e[i].v>>e[i].w;
-		e[i].next=head[e[i].u];
-		head[e[i].u]=i;
+	for(int i=1;i<=m;i++){
+		int u,v,w;
+		cin>>u>>v>>w;
+		add_edge(u,v,w);
 	}
+	for(int i=1;i<=n;i++){
+		dis[i]=INF;
+	}
+	dis[s]=0;
 	dijkstra();
-	for(int i=1;i<=n;i++){
-		cout<<dis[i]<<" ";
-	}
 	return 0;
 }
 ```
-
-![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
