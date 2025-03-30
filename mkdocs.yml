@@ -174,4 +174,5 @@ nav:
     - dijkstra算法: mode/dijkstra.md
     - 树的dfs: mode/tree_dfs.md
   - contest:
-    - codeforces round 1014 (div2): contest/codeforces.md
+    - codeforces:
+      -codeforces round 1014 (div2): codeforces round 1014 (div2).md
