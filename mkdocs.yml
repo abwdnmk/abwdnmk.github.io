@@ -173,6 +173,8 @@ nav:
   - 算法模板:
     - dijkstra算法: mode/dijkstra.md
     - 树的dfs: mode/tree_dfs.md
+    - 树状数组(前缀和): mode/tree_array1.md
+    - 树状数组(差分): mode/tree_array2.md
   - contest:
     - codeforces:
       - codeforces round 1014 (div2): contest/codeforces/codeforces round 1014 (div2).md
