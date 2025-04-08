@@ -189,3 +189,5 @@ nav:
     - 杭电春季联赛:
       - 春季联赛4: contest/hdoj/杭电春季联赛4.md
       - 春季联赛5: contest/hdoj/杭电春季联赛5.md
+  - 题目合集:
+    - 动态规划: problem tip/dp动态规划.md
