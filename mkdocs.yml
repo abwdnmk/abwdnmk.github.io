@@ -161,7 +161,7 @@ extra_css:
 nav:
   - 首页: index.md
   - 写题心得: skill.md
-  - 每日水题:
+  - 日常刷题:
     - 3月5日: water/2025 3.5.md
     - 3月6日: water/2025 3.6.md
     - 3月7日: water/2025 3.7.md
@@ -189,3 +189,5 @@ nav:
     - 杭电春季联赛:
       - 春季联赛4: contest/hdoj/杭电春季联赛4.md
       - 春季联赛5: contest/hdoj/杭电春季联赛5.md
+  - 题单合集:
+    -动态规划: problem tip/dp动态规划.md
