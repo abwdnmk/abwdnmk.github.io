@@ -182,6 +182,7 @@ nav:
     - 树状数组(前缀和): mode/tree_array1.md
     - 树状数组(差分): mode/tree_array2.md
     - 并查集: mode/Disjoint-set data structrue.md
+    - 整数在mod p下的逆元: mode/inele mod.md
   - contest:
     - codeforces:
       - codeforces round 1014 (div2): contest/codeforces/codeforces round 1014 (div2).md
