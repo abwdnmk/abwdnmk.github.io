@@ -28,3 +28,5 @@ void solve(){
 ```
 
 ![点击并拖拽以移动](data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw==)
+
+粘贴一道题目便于理解<[B3717 组合数问题 - 洛谷](https://www.luogu.com.cn/problem/B3717)>
