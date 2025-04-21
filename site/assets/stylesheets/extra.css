@@ -29,14 +29,9 @@ code, pre, .md-typeset code {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* 选择body元素，意味着将背景应用到整个页面 */
-body { 
-  /* 设置背景图片路径，根据图片实际存放位置调整相对路径 */
-  background-image: url(assets/images/pic.png); 
-  /* 设置背景图片不重复 */
-  background-repeat: no-repeat; 
-  /* 设置背景图片覆盖整个容器，可按需调整，如contain等 */
-  background-size: cover; 
-  /* 设置背景图片固定，不随页面滚动而滚动 */
-  background-attachment: fixed; 
+body {
+  background-image: url('site/images/pic.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
