@@ -30,7 +30,7 @@ code, pre, .md-typeset code {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  background-image: url('assets/images/pic.png');
+  background-image:  url('../images/pic.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
